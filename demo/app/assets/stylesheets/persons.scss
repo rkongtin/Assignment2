@@ -1,0 +1,100 @@
+// Place all the styles related to the persons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.toolbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #707070;
+    font-size: 18px;
+}
+
+li.header {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li .header, .highlighted {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+li .header:hover {
+    background-color: black;
+}
+
+li .highlighted {
+    background-color: #404040;
+    box-shadow: 0 0 8px 10px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+body {
+    font-family: Times New Roman;
+    font-size: 15px;
+}
+
+h1, h2, p, div {
+    margin-left: 20px;
+}
+
+h1, h2 {
+    padding: 3px;
+}
+
+p {
+    padding-left: 10px;
+}
+
+table, th, td {
+    width: 1100px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin-left: 20px;
+    padding: 8px;
+}
+
+th {
+    border-top: 1px solid #E0E0E0 ;
+    background: linear-gradient(white, #C8C8C8);
+    font-size: 18px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #E0E0E0;
+}
+
+.footer, .submit {
+    border: none;
+    background-color: white;
+    font-family: Times New Roman;
+    text-decoration: none;
+    font-size: 20px;
+    color: #404040;
+}
+
+.footer {
+    padding-left: 35px;
+}
+
+.footer:hover, .submit:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+#square {
+	background: lightgrey;
+	display: inline;
+}
