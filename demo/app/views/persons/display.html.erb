@@ -1,0 +1,27 @@
+<ul class="toolbar">
+    <li class="header"><%= link_to 'HOME', welcome_index_path, method: :get, :class => "header" %></li>
+    <li class="header"><%= link_to 'LIST OF PEOPLE', persons_path, method: :get, :class => "header" %></li>
+    <li class="header"><%= link_to 'DISPLAY OF PEOPLE', persons_path, method: :get, :class => "highlighted" %></li>
+</ul>
+
+<%= form_for :persons do |f| %>
+<p><%= f.label %></p>
+
+<div id="octagon"></div>
+
+<% @persons.each do |person| %>
+    <tr>
+        <td><%= person.name %></td>
+        <td><%= person.age %></td>
+        <td><%= person.weight %></td>
+        <td><%= person.height %></td>
+        <td><%= person.country %></td>
+        <td><%= person.favorite_color %></td>
+        <div class="links">
+        <td><%= link_to 'SHOW', person_path(person) %></td>
+        <td><%= link_to 'EDIT', edit_person_path(person) %></td>
+        <td><%= link_to 'DELETE', person_path(person), method: :delete, 
+                data: { confirm: 'Are you sure?' } %></td>
+        </div>
+    </tr>
+<% end %>
