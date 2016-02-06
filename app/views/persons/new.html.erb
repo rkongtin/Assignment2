@@ -1,0 +1,47 @@
+<ul class="toolbar">
+    <li class="header"><%= link_to 'HOME', welcome_index_path, method: :get, :class => "header" %></li>
+    <li class="header"><%= link_to 'LIST OF PEOPLE', persons_path, method: :get, :class => "header" %></li>
+    <li class="header"><%= link_to 'DISPLAY OF PEOPLE', display_index_path, method: :get, :class => "header" %></li>
+</ul>
+
+<h1>New Person</h1>
+
+<%= form_for :person, url: persons_path do |f| %>
+
+<p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, :required => true, :class => 'input' %>
+</p>
+
+<p>
+    <%= f.label :age %><br>
+    <%= f.text_field :age, :required => true, :class => 'input' %>
+</p>
+
+<p>
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight, :required => true, :class => 'input' %>
+</p>
+
+<p>
+    <%= f.label :height %><br>
+    <%= f.text_field :height, :required => true, :class => 'input' %>
+</p>
+
+<p>
+    <%= f.label :country %><br>
+    <%= f.country_select :country, {}, { :class => 'input' } %>
+</p>
+
+<p>
+    <%= f.label :favorite_color %><br>
+    <%= f.text_field :favorite_color, :required => true, :class => 'input' %>
+</p>
+
+<p>
+    <%= f.submit 'SAVE PERSON', class: 'submit' %>
+</p>
+
+<% end %>
+
+<%= link_to '<< BACK', persons_path, :class => "footer" %>

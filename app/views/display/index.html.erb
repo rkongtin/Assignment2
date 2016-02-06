@@ -1,0 +1,26 @@
+<div id="display">
+    <ul class="toolbar">
+        <li class="header"><%= link_to 'HOME', welcome_index_path, method: :get, :class => "header" %></li>
+        <li class="header"><%= link_to 'LIST OF PEOPLE', persons_path, method: :get, :class => "header" %></li>
+        <li class="header"><%= link_to 'DISPLAY OF PEOPLE', display_index_path, method: :get, :class => "highlighted" %></li>
+    </ul>
+    
+    <div class="text"><p>GET READY...SET...GO!</p></div>
+
+    <% @persons.each do |person| %>
+    <div id="square" style="width: <%= person.weight %>px; height: <%= person.height %>px; background: <%= person.favorite_color %>; animation-duration: <%= person.age * 0.01 %>s;">
+        <div id="detail">
+            <%= person.name %>
+            <%= person.age %><br><br>
+            <%= person.country %>
+        </div>
+    </div>
+    <% end %>
+    <div id="start">S T A R T</div>
+</div>
+<input type="button" value="CLICK HERE FOR MORE INFORMATION" onClick=message() />
+<script>
+function message() {
+    alert("Each bouncing box contains the name and age of each person.\nHeight of the box is equivalent to the person's height (in cm) and the width is equivalent to the person's weight (in kg)");
+}
+</script>

@@ -1,0 +1,22 @@
+<div id="welcome">
+    <ul class="toolbar">
+       <li class="header"><%= link_to 'HOME', welcome_index_path, method: :get, :class => "highlighted" %></li>
+       <li class="header"><%= link_to 'LIST OF PEOPLE', persons_path, method: :get, :class => "header" %></li>
+        <li class="header"><%= link_to 'DISPLAY OF PEOPLE', display_index_path, method: :get, :class => "header" %></li>
+    </ul>
+    
+    <img class="flag" src="http://www.clipartbest.com/cliparts/eiM/EjR/eiMEjRLin.png" alt="racing flag"></img>
+    <div id="content">
+        <br>
+        <h1 class="welcome">Welcome to the international race analysis!</h1>
+        <p class="welcome">Compare a set of people to compete in a race by</p>
+        <ul class="welcome">
+            <li>adding a new person</li>
+            <li>editing the person</li>
+            <li>removing a person</li>
+            <li>displaying all competitors</li>
+        </ul>
+        <br>
+        <h1>Have fun!</h1>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div id="list">
+    <ul class="toolbar">
+        <li class="header"><%= link_to 'HOME', welcome_index_path, method: :get, :class => "header" %></li>
+        <li class="header"><%= link_to 'LIST OF PEOPLE', persons_path, method: :get, :class => "highlighted" %></li>
+        <li class="header"><%= link_to 'DISPLAY OF PEOPLE', display_index_path, method: :get, :class => "header" %></li>
+    </ul>
+
+    <br><br>
+    <table class="list">
+        <tr>
+            <th class="list">Name</th>
+            <th class="list">Age</th>
+            <th class="list">Weight</th>
+            <th class="list">Height</th>
+            <th class="list">Country</th>
+            <th class="list">Favorite Color</th>
+            <th class="list" colspan="3"></th>
+        </tr>
+    
+        <% @persons.each do |person| %>
+            <tr>
+                <td class="list"><%= person.name %></td>
+                <td class="list"><%= person.age %></td>
+                <td class="list"><%= person.weight %></td>
+                <td class="list"><%= person.height %></td>
+                <td class="list"><%= person.country %></td>
+                <td class="list"><%= person.favorite_color %></td>
+                <div class="links">
+                <td class="list"><%= link_to 'SHOW', person_path(person) %></td>
+                <td class="list"><%= link_to 'EDIT', edit_person_path(person) %></td>
+                <td class="list"><%= link_to 'DELETE', person_path(person), method: :delete, 
+                        data: { confirm: 'Are you sure?' } %></td>
+                </div>
+            </tr>
+        <% end %>
+    </table>
+    <br><br>
+    <%= link_to 'ADD A NEW PERSON', new_person_path, :class => "footer" %>
+    <br><br>
+</div>

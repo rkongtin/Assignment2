@@ -1,0 +1,63 @@
+// Place all the styles related to the display controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#display {
+    width: 1333px;
+    height: 800px;
+    background: url("http://cdn.running.competitor.com/files/2013/07/shutterstock_111948473.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#start {
+    width: 1333px;
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 440px;
+    position: relative;
+}
+
+div#square {
+    text-align: center;
+    float: left;
+    margin-left: 40px;
+    margin-top: 200px;
+    position: relative;
+    animation-name: example;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px; bottom:0px;}
+    25%  {left:0px; top:5px; bottom:0px;}
+    50%  {left:0px; top:0px; bottom:px;}
+    75%  {left:0px; top:0px; bottom:5px;}
+    100% {left:0px; top:0px; bottom:0px;}
+}
+
+div#detail {
+    background-color: rgba(255,255,255,0.8);
+    margin: 15px;
+    position: relative;
+}
+
+div.text {
+    text-align: center;
+    font-size: 100px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+img.country {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+input[type="button"] {
+    color: white;
+    background-color: red;
+}

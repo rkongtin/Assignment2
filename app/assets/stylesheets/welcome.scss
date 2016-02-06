@@ -1,0 +1,42 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img.flag {
+    background-image: url("http://www.clipartbest.com/cliparts/eiM/EjR/eiMEjRLin.png");
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+div#welcome {
+    width: 1333px;
+    height: 625px;
+    background: url("https://c2.staticflickr.com/6/5543/10938224924_3eef89a8b9_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#content {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.5);
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+h1.welcome, p.welcome, ul.welcome {
+    position: relative;
+}
+
+p.welcome, ul.welcome {
+    font-size: 25px;
+}
+
+p.welcome{
+    margin-left: 40px;
+}
+
+ul.welcome {
+    margin-left: 50px;
+}

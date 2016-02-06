@@ -1,0 +1,48 @@
+<ul class="toolbar">
+    <li class="header"><%= link_to 'HOME', welcome_index_path, method: :get, :class => "header" %></li>
+    <li class="header"><%= link_to 'LIST OF PEOPLE', persons_path, method: :get, :class => "header" %></li>
+    <li class="header"><%= link_to 'DISPLAY OF PEOPLE', display_index_path, method: :get, :class => "header" %></li>
+</ul>
+
+<h1>Person</h1>
+
+<div id="square1" style="width: <%= @person.weight %>px; height: <%= @person.height %>px; background: <%= @person.favorite_color %>; animation-duration: <%= @person.age * 0.01 %>s;">
+    <div id="detail">
+        <%= @person.name %>
+        <%= @person.age %><br>
+        <%= @person.country %>
+    </div>
+</div>
+
+<p>
+    <strong>Name:</strong>
+    <%= @person.name %>
+</p>
+
+<p>
+    <strong>Age:</strong>
+    <%= @person.age %>
+</p>
+
+<p>
+    <strong>Weight:</strong>
+    <%= @person.weight %>
+</p>
+
+<p>
+    <strong>Height:</strong>
+    <%= @person.height %>
+</p>
+
+<p>
+    <strong>Country:</strong>
+    <%= @person.country %>
+</p>
+
+<p>
+    <strong>Favorite Color:</strong>
+    <%= @person.favorite_color %>
+</p>
+
+<%= link_to '<< BACK', persons_path, :class => "footer" %>
+<%= link_to 'EDIT', edit_person_path(@person), :class => "footer" %>
