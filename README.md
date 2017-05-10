@@ -1,19 +1,3 @@
+# CMPT276 Assignment2
 
-    ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--,
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    -----------------------------------------------------------------
-
-
-Hi there! Welcome to Cloud9 IDE!
-
-This Cloud9 system is designed to be used with the [Ruby on Rails Tutorial](http://www.railstutorial.org/) by Michael Hartl. Full setup instructions can be found for free online in the [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
-
-For more information on how to use Cloud9, visit http://docs.c9.io for our documentation. If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
-
+This is a web app that allows the user to manage a database of people who is willing to run in a race. The user can add new people or edit a person's information or remove a person from the database. The user can also display all competitors in a fun way.
